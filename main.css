@@ -125,15 +125,15 @@ h6,
 }
 .curved-bg-one {
   left: 5vw;
-  top: -6.5vw;
-  font-size: 30px;
+  top: -8.0vw;
+  font-size: 25px;
   position: absolute;
   display: flex;
   align-items: center;
   justify-content: center;
   background: var(--yellow);
-  height: 5rem;
-  width: 7rem;
+  height: 4.5rem;
+  width: 6.5rem;
   border-radius: 61% 39% 75% 25% / 54% 31% 69% 46%;
 }
 .cta {
