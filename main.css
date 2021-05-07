@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;600;700&family=Open+Sans:wght@300;400;600;700&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --yellow: #f49020;
+  --mid-yellow: #e07b17;
+  --orange: #dd5b03;
+  --brown: #603a19;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.title {
+  font-family: "Nunito", sans-serif;
+}
+
+/* Common */
+.flex-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* top-banner */
+.top-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 2.5rem;
+  background: white;
+  font-size: 14px;
+  font-weight: 600;
+}
+.top-banner a i {
+  color: black;
+}
+.top-banner .icon {
+  background: var(--yellow);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 1.6rem;
+  width: 1.6rem;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.banner-text {
+  margin-right: 5px;
+}
+
+/* Image Slideshow */
+
+.mySlides {
+  display: none;
+  height: 100%;
+}
+.mySlides.one {
+  background: linear-gradient(
+      135deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(95, 36, 36, 0) 100%
+    ),
+    url(./images/slider/relocation.jpg) bottom no-repeat;
+  background-size: cover;
+}
+.slideshow-container {
+  overflow: hidden;
+  position: relative;
+  margin: auto;
+  width: 100%;
+  height: 85vh;
+}
+.slide-prev,
+.slide-next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  z-index: 99;
+}
+.slide-next {
+  right: 10vw;
+  border-radius: 3px 0 0 3px;
+}
+.slide-prev {
+  left: 10vw;
+  border-radius: 3px 0 0 3px;
+}
+.slide-prev:hover,
+.slide-next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.slide-text {
+  color: white;
+  font-size: 55px;
+  font-weight: 700;
+  position: absolute;
+  top: 45%;
+  left: 15vw;
+  width: 100%;
+  display: inline-block;
+  z-index: 2;
+}
+.slide-text .and {
+  font-weight: 200;
+}
+.curved-bg-one {
+  left: 5vw;
+  top: -6.5vw;
+  font-size: 30px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--yellow);
+  height: 5rem;
+  width: 7rem;
+  border-radius: 61% 39% 75% 25% / 54% 31% 69% 46%;
+}
+.cta {
+  background: var(--yellow);
+  outline: none;
+  border: none;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  text-transform: uppercase;
+  padding: 0.2rem;
+  cursor: pointer;
+  position: relative;
+  width: 8rem;
+  height: 2.5rem;
+}
+.cta::before {
+  content: "";
+  display: inline-block;
+  width: 8.1rem;
+  height: 2.5rem;
+  border: 1px solid;
+  top: 0.2rem;
+  left: 0.2rem;
+  position: absolute;
+  z-index: -1;
+}
+
+/* CSS Animation */
+
+.animated {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+/* home services */
+.hero-section {
+  position: relative;
+}
+.home-services {
+  width: 100%;
+  height: 140px;
+  position: absolute;
+  bottom: -50px;
+  display: flex;
+  justify-content: center;
+}
+.home-services .service {
+  height: 100%;
+  width: 20%;
+  margin-left: 2%;
+  display: flex;
+  padding: 0.7rem;
+  align-items: flex-start;
+  color: white;
+}
+.home-services .service p {
+  font-size: 13px;
+}
+.home-services .service h2{
+    font-weight: 800;
+}
+.home-services .service .icon {
+  margin-right: 0.7rem;
+  padding-top: 7px;
+}
+.home-services .service .icon img {
+  width: 30px;
+}
+.grooming {
+  background: var(--yellow);
+}
+.bording {
+  background: var(--brown);
+}
+.daycare {
+  background: var(--mid-yellow);
+}
+.relocation {
+  background: var(--orange);
+}
