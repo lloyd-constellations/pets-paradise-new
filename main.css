@@ -320,8 +320,28 @@ a.navcta::before {
 }
 .home-services .service .icon {
   margin-right: 0.7rem;
-  padding-top: 7px;
+  margin-top: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  background: rgba(0, 0, 0, 0.5);
+  height: 3.5rem;
+  width: 3.5rem;
 }
+.curved-bg-two{
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+}
+.curved-bg-three{
+  border-radius: 61% 39% 75% 25% / 54% 31% 69% 46%;
+}
+.curved-bg-four{
+  border-radius: 70% 30% 30% 70% / 70% 70% 30% 30%;
+}
+.curved-bg-five{
+  border-radius: 21% 79% 25% 75% / 53% 40% 60% 47% ;
+}
+
 .home-services .service .icon img {
   width: 30px;
 }
