@@ -67,7 +67,7 @@ h6,
 }
 
 /* Nav  Bar */
-.nav{
+.nav {
   background: rgba(0, 0, 0, 0);
   top: 0rem;
   position: absolute;
@@ -75,36 +75,36 @@ h6,
   width: 100vw;
   border-bottom: 0.12rem solid #ccc;
 }
-.nav-container{
+.nav-container {
   margin: auto;
   display: flex;
   align-items: center;
   width: 90%;
   justify-content: space-between;
 }
-.brand-logo img{
+.brand-logo img {
   width: 250px;
 }
-.nav-items{
- display: flex;
- align-items: center;
- justify-content: space-between;
- width: 65%;
+.nav-items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 65%;
 }
-.nav-items a{
+.nav-items a {
   text-decoration: none;
   color: white;
   text-transform: uppercase;
-  font-weight:600;
+  font-weight: 600;
   font-size: 14px;
 }
-.nav-items a:hover{
-  color: var(--yellow)
+.nav-items a:hover {
+  color: var(--yellow);
 }
-.nav-items a.active{
-  color: var(--yellow)
+.nav-items a.active {
+  color: var(--yellow);
 }
-a.navcta{
+a.navcta {
   background: var(--maroon);
   outline: none;
   border: none;
@@ -117,7 +117,7 @@ a.navcta{
   align-items: center;
   justify-content: center;
 }
-a.navcta:hover{
+a.navcta:hover {
   color: white;
   background: var(--mid-maroon);
 }
@@ -186,10 +186,10 @@ a.navcta::before {
   border-radius: 0 3px 3px 0;
   z-index: 98;
 }
-.slide-next i{
+.slide-next i {
   transform: rotate(90deg);
 }
-.slide-prev i{
+.slide-prev i {
   transform: rotate(-90deg);
 }
 .slide-next {
@@ -247,7 +247,7 @@ a.navcta::before {
   width: 8rem;
   height: 2.5rem;
 }
-.cta:hover{
+.cta:hover {
   background: var(--mid-yellow);
 }
 .cta::before {
@@ -315,31 +315,36 @@ a.navcta::before {
 .home-services .service p {
   font-size: 13px;
 }
-.home-services .service h2{
-    font-weight: 800;
+.home-services .service h2 {
+  font-weight: 800;
 }
 .home-services .service .icon {
   margin-right: 0.7rem;
   margin-top: 7px;
   display: flex;
+  font-size: 28px;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  background: rgba(0, 0, 0, 0.5);
+  color: var(--brown);
+  background: rgb(255, 255, 255);
   height: 3.5rem;
   width: 3.5rem;
 }
-.curved-bg-two{
+.curved-bg-two {
   border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
 }
-.curved-bg-three{
-  border-radius: 61% 39% 75% 25% / 54% 31% 69% 46%;
+.curved-bg-two svg {
+  transform: rotate(45deg);
 }
-.curved-bg-four{
-  border-radius: 70% 30% 30% 70% / 70% 70% 30% 30%;
+.curved-bg-three {
+  border-radius: 21% 79% 25% 75% / 53% 40% 60% 47%;
 }
-.curved-bg-five{
-  border-radius: 21% 79% 25% 75% / 53% 40% 60% 47% ;
+.curved-bg-four {
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+}
+.curved-bg-five {
+  border-radius: 21% 79% 25% 75% / 53% 40% 60% 47%;
 }
 
 .home-services .service .icon img {
@@ -357,6 +362,6 @@ a.navcta::before {
 .relocation {
   background: var(--orange);
 }
-.home-gallery{
- min-height: 100vh;
+.home-gallery {
+  min-height: 100vh;
 }
