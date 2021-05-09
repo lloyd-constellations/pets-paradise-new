@@ -176,16 +176,21 @@ a.navcta::before {
 .slide-next {
   cursor: pointer;
   position: absolute;
-  top: 50%;
+  top: 52%;
   width: auto;
-  padding: 16px;
   margin-top: -22px;
   color: white;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 30px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   z-index: 98;
+}
+.slide-next i{
+  transform: rotate(90deg);
+}
+.slide-prev i{
+  transform: rotate(-90deg);
 }
 .slide-next {
   right: 7vw;
@@ -197,7 +202,7 @@ a.navcta::before {
 }
 .slide-prev:hover,
 .slide-next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+  color: var(--yellow);
 }
 .slide-text {
   color: white;
