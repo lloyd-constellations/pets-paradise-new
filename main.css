@@ -374,13 +374,13 @@ a.navcta::before {
   align-items: center;
   justify-content: center;
 }
-.tab-cta{
-  margin-bottom:2rem ;
+.tab-cta {
+  margin-bottom: 2rem;
 }
-.tab-cta button{
+.tab-cta button {
   outline: none;
   border: 2px solid #aaa;
-  background: white;;
+  background: white;
   color: black;
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
@@ -391,7 +391,7 @@ a.navcta::before {
   width: 8rem;
   height: 2.5rem;
 }
-.tab-cta .active{
+.tab-cta .active {
   background: var(--yellow);
   color: white;
   border: none;
@@ -400,7 +400,7 @@ a.navcta::before {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(8, 5vw);
-  grid-gap: 9px;
+  grid-gap: 7px;
 }
 .gallery__img {
   width: 100%;
@@ -503,6 +503,84 @@ a.navcta::before {
 
 /* Home - About Pets paradise */
 
-.home-about{
+.home-about {
   min-height: 70vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.home-about .main-title{
+  font-weight: 900;
+  font-size: 35px;
+}
+.home-about .main-title .one{
+  color: var(--yellow)
+}
+.home-about .main-title .two{
+  color: var(--brown)
+}
+.home-about .tag{
+  font-size: 15px;
+  font-weight:700;
+  margin: 0.3rem 0;
+}
+.home-about .content {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+}
+.home-about .content .img {
+  display: flex;
+}
+.home-about .content .img img {
+  width: 100%;
+}
+.home-about .content .details {
+  background: var(--yellow);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  padding: 2rem 4rem;
+  font-size: 15px;
+}
+.home-about .content .details h2 {
+  font-size: 30px;
+  font-weight: 900;
+}
+.home-about .content .details ul {
+  margin: 0.7rem 2rem;
+}
+.about-cta{
+  background: #eee;
+  outline: none;
+  border: none;
+  color: rgb(0, 0, 0);
+  font-family: "Open Sans", sans-serif;
+  font-weight: 900;
+  font-size: 12px;
+  text-transform: uppercase;
+  padding: 0.2rem;
+  cursor: pointer;
+  width: 8.5rem;
+  height: 2.5rem;
+  position: relative;
+}
+.about-cta::before{
+  content: "";
+  display: inline-block;
+  width: 8.5rem;
+  height: 2.5rem;
+  border: 1px solid #eee;
+  top: 0.2rem;
+  left: 0.25rem;
+  position: absolute;
+  z-index: 0;
+}
+.testimonial{
+  height: 100vh;
 }
