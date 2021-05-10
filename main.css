@@ -47,6 +47,9 @@ h6,
   font-size: 14px;
   font-weight: 600;
   z-index: 999;
+  box-shadow: 0px 4px 7px -1px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px 4px 7px -1px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 4px 7px -1px rgba(0,0,0,0.75);
 }
 .top-banner a i {
   color: black;
