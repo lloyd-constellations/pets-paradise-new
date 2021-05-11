@@ -27,7 +27,10 @@ h6,
 .title {
   font-family: "Nunito", sans-serif;
 }
-
+.main-title{
+  font-weight: 900;
+  font-size: 35px;
+}
 /* Common */
 .flex-items {
   display: flex;
@@ -514,10 +517,6 @@ a.navcta::before {
   align-items: center;
   justify-content: space-evenly;
 }
-.home-about .main-title{
-  font-weight: 900;
-  font-size: 35px;
-}
 .home-about .main-title .one{
   color: var(--yellow)
 }
@@ -570,10 +569,6 @@ a.navcta::before {
   padding: 2rem 4rem;
   font-size: 15px;
 }
-.home-about .content .details h2 {
-  font-size: 30px;
-  font-weight: 900;
-}
 .home-about .content .details ul {
   margin: 0.7rem 2rem;
 }
@@ -605,33 +600,60 @@ a.navcta::before {
 }
 /* Testimonials */
 .testimonial{
-  height: 70vh;
+  height: 60vh;
   color: black;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
+.testimonial h2{
+  margin-bottom: 2rem;
+}
 .testimonial .slideshow-container {
 	overflow: hidden;
 	position: relative;
 	margin: auto;
-	width: 70vw;
-	height: 40vh;
+	width: 80vw;
+	height: 30vh;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .myTestimonialSlides{
   display: none;
+  width: 70%;
+  height: 100%;
+}
+.myTestimonialSlides .slide-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;;
+}
+.myTestimonialSlides .slide-content span{
+  color: white;
+  font-size: 25px;
+  background: var(--yellow);
+  height: 2.7rem;
+  width: 2.7rem;
+  border-radius: 50%;
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0; 
+}
+.myTestimonialSlides .slide-content h3{
+  margin: 0.5rem 0;
+}
+.myTestimonialSlides .slide-content p{
+  text-align: center;
 }
 .testimonial .slide-prev, .testimonial .slide-next {
 	cursor: pointer;
 	position: absolute;
 	top: 50%;
 	width: auto;
-	padding: 16px;
-	margin-top: -22px;
+	translate: (0, -50%);
 	color: var(--brown);
 	font-weight: bold;
   font-size: 30px;
@@ -639,8 +661,10 @@ a.navcta::before {
 	border-radius: 0 3px 3px 0;
 }
 .testimonial .slide-next {
-	right: 0;
-	border-radius: 3px 0 0 3px;
+	right: 2rem;
+}
+.testimonial .slide-prev{
+  left: 2rem;
 }
 .testimonial .slide-prev:hover, .testimonial .slide-next:hover {
 	color: var(--yellow)
