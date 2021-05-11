@@ -33,7 +33,15 @@ function showTestimonialSlides() {
   for (let i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
+
   slides[testimonialSlideIndex - 1].style.display = "block";
+
+  let dots = document.getElementsByClassName("slide-dot");
+	for (let i = 0; i < dots.length; i++) {
+		dots[i].className = dots[i].className.replace(" slide-dot-active", "");
+    console.log(dots[i].className)
+	}
+	dots[testimonialSlideIndex-1].className += " slide-dot-active";
 }
 function plusTestimonialSlides(n) {
   testimonialSlideIndex += n;
