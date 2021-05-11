@@ -603,6 +603,62 @@ a.navcta::before {
   position: absolute;
   z-index: 0;
 }
+/* Testimonials */
 .testimonial{
-  height: 100vh;
+  height: 70vh;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.testimonial .slideshow-container {
+	overflow: hidden;
+	position: relative;
+	margin: auto;
+	width: 70vw;
+	height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.myTestimonialSlides{
+  display: none;
+}
+.testimonial .slide-prev, .testimonial .slide-next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	padding: 16px;
+	margin-top: -22px;
+	color: var(--brown);
+	font-weight: bold;
+  font-size: 30px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+}
+.testimonial .slide-next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+.testimonial .slide-prev:hover, .testimonial .slide-next:hover {
+	color: var(--yellow)
+}
+.slide-dot-control {
+	text-align: center;
+	margin-top: 10px;
+}
+.slide-dot {
+	cursor:pointer;
+	height: 13px;
+	width: 13px;
+	margin: 0 2px;
+	background-color: var(--brown);
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+.slide-dot-active, .slide-dot:hover {
+	background-color: var(--yellow);
 }
