@@ -708,7 +708,7 @@ a.navcta::before {
   display: flex;
   max-width: 85vw;
   margin: auto;
-  padding: 2rem 0;
+  padding: 1.5rem 0;
   align-items: flex-start;
   justify-content: flex-start;
 }
