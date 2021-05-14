@@ -150,7 +150,7 @@ a.navcta::before {
       rgba(0, 0, 0, 0.4) 0%,
       rgba(0, 0, 0, 0.4) 100%
     ),
-    url(../images/Banners/banner-02.jpg) bottom no-repeat;
+    url(../images/Banners/general.jpg) bottom no-repeat;
   background-size: cover;
 }
 .about-hero-title{
