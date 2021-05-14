@@ -385,7 +385,7 @@ a.navcta::before {
 }
 .tab-cta button {
   outline: none;
-  border: 2px solid #aaa;
+  border: 2px solid rgb(170, 107, 107);
   background: white;
   color: black;
   font-family: "Open Sans", sans-serif;
