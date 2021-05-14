@@ -397,13 +397,21 @@ a.navcta::before {
   width: 8rem;
   height: 2.5rem;
 }
+.tab-cta button:hover{
+  background: var(--yellow);
+  color: white;
+  border: none;
+}
 .tab-cta .active {
   background: var(--yellow);
   color: white;
   border: none;
 }
-.home-gallery .gallery {
+#groomingTabContent{
   display: grid;
+}
+.home-gallery .gallery {
+  display: none;
   grid-template-columns: repeat(7, 1fr);
   grid-template-rows: repeat(9,5vw);
   grid-gap: 7px;

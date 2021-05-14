@@ -37,11 +37,10 @@ function showTestimonialSlides() {
   slides[testimonialSlideIndex - 1].style.display = "block";
 
   let dots = document.getElementsByClassName("slide-dot");
-	for (let i = 0; i < dots.length; i++) {
-		dots[i].className = dots[i].className.replace(" slide-dot-active", "");
-    console.log(dots[i].className)
-	}
-	dots[testimonialSlideIndex-1].className += " slide-dot-active";
+  for (let i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" slide-dot-active", "");
+  }
+  dots[testimonialSlideIndex - 1].className += " slide-dot-active";
 }
 function plusTestimonialSlides(n) {
   testimonialSlideIndex += n;
@@ -58,3 +57,31 @@ function showAllSlides() {
 }
 
 window.onload = showAllSlides();
+
+// Gallery tabs
+// Select elements
+const buttons = document.querySelectorAll(".gallery-tab-cta");
+const gallery = document.querySelectorAll(".gallery");
+
+// function
+function switchTab(button) {
+  gallery.forEach((gallery, index) => {
+    if (gallery.id === button.id + "Content") {
+      gallery.style.display = "grid";
+      button.classList.add("active");
+      gallery.style.animation = `fadeIn 1s`;
+    } else {
+      gallery.style.display = "none";
+      // note.style.animation = "";
+    }
+    for (let i = 0; i < buttons.length; i++) {
+      buttons[i].classList.remove("active");
+    }
+    button.classList.add("active");
+  });
+}
+
+// add event listeners to each button
+buttons.forEach((button) => {
+  button.addEventListener("click", () => switchTab(button));
+});
