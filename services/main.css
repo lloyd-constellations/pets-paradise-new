@@ -29,7 +29,7 @@ h6,
 }
 .main-title {
   font-weight: 900;
-  font-size: 35px;
+  font-size: 40px;
 }
 /* Common */
 .flex-items {
@@ -164,12 +164,133 @@ a.navcta::before {
     display: inline-block;
     z-index: 2;
 }
+/* Services content */
+.services{
+  min-height: 70vh;
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.services h2{
+  margin: 2rem 0 0.5rem 0;
+}
+.services h2 span{
+  color: var(--yellow)
+}
+.services .service-tag{
+  color: var(--brown);
+  font-weight: 600;
+}
+.services .content{
+  margin: 3rem 0;
+}
+.service{
+  display: flex;
+}
+.service.boarding{
+  flex-direction: row-reverse;
+}
+.service.relocation{
+  flex-direction: row-reverse;
+}
+.service img{
+  width: 50%;
+}
+.service-details{
+  background: var(--yellow);
+  display:flex;
+  padding: 0.7rem 4rem;
+  align-items: center;
+  color: white;
+  text-align: justify;
+}
+.grooming .service-details{
+  background: var(--yellow);
+}
+.boarding .service-details{
+  background: var(--brown);
+}
+.daycare .service-details{
+  background: var(--mid-yellow);
+}
+.relocation .service-details{
+  background: var(--orange);
+}
 
+.service .details{
+  display:flex;
+}
+.service .details h3{
+  font-size: 35px;
+  font-weight: 900;
+  margin-bottom: 0.5rem;
+}
+.service .icon {
+  margin-right: 1.5rem;
+  margin-top: 7px;
+  display: flex;
+  font-size: 35px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: var(--brown);
+  background: rgb(255, 255, 255);
+  height: 5rem;
+  width: 5rem;
+}
+.curved-bg-two {
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+}
+.curved-bg-two svg {
+  transform: rotate(45deg);
+}
+.curved-bg-three {
+  border-radius: 21% 79% 25% 75% / 53% 40% 60% 47%;
+}
+.curved-bg-four {
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+}
+.curved-bg-five {
+  border-radius: 21% 79% 25% 75% / 53% 40% 60% 47%;
+}
+.service-cta{
+  background: var(--yellow);
+  outline: none;
+  border: none;
+  padding: 0.2rem;
+  cursor: pointer;
+  position: relative;
+  width: 13rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.service-cta:hover{
+  background: var(--mid-yellow);
+}
+.service-cta::before{
+  content: "";
+  display: inline-block;
+  width: 13rem;
+  height: 4rem;
+  border: 2px solid var(--brown);
+  top: 0.45rem;
+  left: 0.45rem;
+  position: absolute;
+  z-index: -1;
+}
 /* Footer */
 
 .footer {
   background: rgb(245, 245, 245);
   font-size: 14px;
+  margin-top: 2rem;
 }
 .footer-content {
   display: flex;
@@ -182,6 +303,12 @@ a.navcta::before {
 .footer .main-title {
   font-size: 30px;
   margin-bottom: 0.7rem;
+}
+.main-title .one {
+  color: var(--yellow);
+}
+.main-title .two {
+  color: var(--brown);
 }
 .footer-about {
   width: 20.6rem;

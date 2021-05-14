@@ -29,7 +29,7 @@ h6,
 }
 .main-title {
   font-weight: 900;
-  font-size: 35px;
+  font-size: 40px;
 }
 /* Common */
 .flex-items {
@@ -182,6 +182,12 @@ a.navcta::before {
 .footer .main-title {
   font-size: 30px;
   margin-bottom: 0.7rem;
+}
+.main-title .one {
+  color: var(--yellow);
+}
+.main-title .two {
+  color: var(--brown);
 }
 .footer-about {
   width: 20.6rem;
