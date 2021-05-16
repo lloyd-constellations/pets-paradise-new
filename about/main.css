@@ -30,6 +30,7 @@ h6,
 .main-title {
   font-weight: 900;
   font-size: 40px;
+  font-family: "Nunito", sans-serif;
 }
 /* Common */
 .flex-items {
@@ -163,6 +164,33 @@ a.navcta::before {
     width: 100%;
     display: inline-block;
     z-index: 2;
+}
+
+/* Content */
+.about-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem;
+}
+.about-content .details{
+  display: flex;
+  margin: 2rem 0;
+  width: 70vw;
+  color: white;
+}
+.details .story, .details .passion{
+  padding: 3rem 2rem;
+}
+.details .story{
+  background: var(--yellow);
+}
+.details .passion{
+  background: var(--brown);
+}
+.about-content h3{
+  font-size: 35px;
+  margin-bottom: 1rem;
 }
 
 /* Footer */

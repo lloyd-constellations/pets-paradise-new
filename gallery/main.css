@@ -27,6 +27,10 @@ h6,
 .title {
   font-family: "Nunito", sans-serif;
 }
+.title{
+  font-size: 30px;
+  font-weight: 900;
+}
 .main-title {
   font-weight: 900;
   font-size: 40px;
