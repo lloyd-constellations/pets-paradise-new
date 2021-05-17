@@ -294,7 +294,7 @@ a.navcta::before {
 .footer {
   background: rgb(245, 245, 245);
   font-size: 14px;
-  margin-top: 2rem;
+  margin-top: 3rem;
 }
 .footer-content {
   display: flex;
