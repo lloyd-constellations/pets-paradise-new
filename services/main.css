@@ -265,7 +265,7 @@ a.navcta::before {
   padding: 0.2rem;
   cursor: pointer;
   position: relative;
-  width: 13rem;
+  width: 14rem;
   height: 4rem;
   display: flex;
   align-items: center;
@@ -281,7 +281,7 @@ a.navcta::before {
 .service-cta::before{
   content: "";
   display: inline-block;
-  width: 13rem;
+  width: 14rem;
   height: 4rem;
   border: 2px solid var(--brown);
   top: 0.45rem;
