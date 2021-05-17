@@ -414,7 +414,7 @@ a.navcta::before {
   display: none;
   grid-template-columns: repeat(7, 1fr);
   grid-template-rows: repeat(9,5vw);
-  grid-gap: 7px;
+  gap: 7px;
 }
 .gallery__img {
   width: 100%;
