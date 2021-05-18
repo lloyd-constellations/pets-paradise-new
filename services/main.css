@@ -383,8 +383,31 @@ a.navcta::before {
     cursor: pointer;
   }
   /* hero section */
-  .about-hero-title{
+  .about-hero-title {
     font-size: 40px;
+  }
+  /* services */
+  .services{
+    width: 90vw;
+    margin: auto;
+    text-align: center;
+  }
+  .service{
+    flex-direction: column;
+    margin-bottom: 2rem;
+  }
+  .service.boarding {
+    flex-direction: column;
+  }
+  .service.relocation {
+    flex-direction: column;
+  }
+  .service img{
+    width: 100%;
+  }
+  .service-details{
+    padding: 1rem;
+    text-align: start;
   }
   /* footer */
   .footer-content {
