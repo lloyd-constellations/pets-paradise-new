@@ -82,6 +82,9 @@ h6,
   width: 100vw;
   border-bottom: 0.12rem solid #ccc;
 }
+.menu-icon{
+  display: none;
+}
 .nav-container {
   margin: auto;
   display: flex;
