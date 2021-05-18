@@ -356,6 +356,25 @@ position: relative;
   .about-hero-title{
     font-size: 40px;
   }
+  /* content */
+  .about-content .details{
+    width: 85vw;
+    flex-direction: column;
+  }
+  .details .story{
+    margin-bottom: 2rem;
+  }
+  .about-content .main-title{
+    font-size: 30px;
+  }
+  .about-content h3{
+    font-size: 30px;
+  }
+  /* team */
+  .stuff{
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
   /* footer */
   .footer-content {
     flex-direction: column;
