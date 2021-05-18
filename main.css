@@ -447,8 +447,6 @@ a.navcta::before {
   grid-column-end: 6;
   grid-row-start: 4;
   grid-row-end: 7;
-  background: var(--yellow);
-  padding: 0.5rem;
   z-index: 0;
 }
 .gallery-content {
@@ -458,6 +456,17 @@ a.navcta::before {
   align-items: center;
   justify-content: space-evenly;
   color: white;
+  padding: 0.5rem;
+  background: var(--yellow);
+}
+.gallery-content.boarding{
+  background: var(--brown);
+}
+.gallery-content.daycare{
+  background: var(--mid-yellow);
+}
+.gallery-content.relocation{
+  background: var(--orange);
 }
 .gallery-content h2 {
   font-weight: 700;
@@ -466,6 +475,7 @@ a.navcta::before {
 .gallery-content p {
   text-align: center;
   margin: 0.3rem 0;
+  font-size: 14px;
 }
 .gallery-cta {
   background: rgb(255, 255, 255);
@@ -482,19 +492,16 @@ a.navcta::before {
   height: 2.5rem;
   position: relative;
 }
-.gallery-cta:hover {
-  background: #eee;
-}
 .gallery-cta::before {
   content: "";
   display: inline-block;
   width: 7rem;
   height: 2.5rem;
-  border: 1px solid #eee;
+  border: 1px solid rgb(255, 255, 255);
   top: 0.2rem;
   left: 0.25rem;
   position: absolute;
-  z-index: -1;
+  z-index: 2;
 }
 .gallery__item--5 {
   grid-column-start: 6;
