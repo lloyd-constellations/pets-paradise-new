@@ -18,7 +18,6 @@ function switchTab(button) {
       gallery.style.animation = `fadeIn 1s`;
     } else {
       gallery.style.display = "none";
-      // note.style.animation = "";
     }
     for (let i = 0; i < buttons.length; i++) {
       buttons[i].classList.remove("active");
