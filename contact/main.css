@@ -357,6 +357,20 @@ form input::placeholder{
   .about-hero-title{
     font-size: 40px;
   }
+  /* contact */
+  .contact-section{
+    width: 80vw;
+  }
+  .contact-details-main{
+    flex-direction: column;
+  }
+  .contact-info{
+    width: 100%;
+  }
+  .contact-form{
+    margin-top: 2rem;
+    width: 100%;
+  }
   /* footer */
   .footer-content {
     flex-direction: column;
