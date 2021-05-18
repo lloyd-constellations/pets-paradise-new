@@ -1,3 +1,9 @@
+const selectElement = (s) => document.querySelector(s);
+
+selectElement(".menu-icon").addEventListener("click", () => {
+  selectElement(".nav-items").classList.toggle("active");
+});
+
 let slideIndex = 1;
 function showSlides() {
   let slides = document.getElementsByClassName("mySlides");
