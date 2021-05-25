@@ -198,7 +198,7 @@ a.navcta::before {
 .service {
   display: flex;
 }
-.service.boarding {
+.service.daycare {
   flex-direction: row-reverse;
 }
 .service.relocation {
@@ -402,7 +402,7 @@ a.navcta::before {
     flex-direction: column;
     margin-bottom: 2rem;
   }
-  .service.boarding {
+  .service.daycare {
     flex-direction: column;
   }
   .service.relocation {

@@ -17,15 +17,22 @@ function showSlides() {
     slides[i].style.display = "none";
   }
   slides[slideIndex - 1].style.display = "block";
+
+  setTimeout(function() {
+    slideIndex++;
+    showSlides();
+  },4000)
 }
-function plusSlides(n) {
-  slideIndex += n;
-  showSlides();
-}
-function currentSlide(n) {
-  slideIndex = n;
-  showSlides();
-}
+// function plusSlides(n) {
+//   slideIndex += n;
+//   showSlides();
+// }
+// function currentSlide(n) {
+//   slideIndex = n;
+//   showSlides();
+// }
+
+// Testimonial
 
 let testimonialSlideIndex = 1;
 function showTestimonialSlides() {
