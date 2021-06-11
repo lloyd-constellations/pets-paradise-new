@@ -1,0 +1,43 @@
+/*Start menu Drop down*/
+.dropdown-content {
+  background-color: var(--maroon);
+  display: none;
+  position: absolute;
+  width: 8.5rem;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-service .dropdown-content {
+  background: var(--yellow);
+  width: 14rem;
+}
+
+.dropdown-content a {
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  color: white !important;
+  background: var(--mid-maroon);
+}
+
+.dropdown-service .dropdown-content a:hover {
+  background: var(--mid-yellow);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+/*nd Start menu Drop down*/
+
+@media (max-width: 900px) {
+  .dropdown {
+    margin-bottom: 4rem;
+  }
+}

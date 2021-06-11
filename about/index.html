@@ -5,8 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>About | Pets Paradise Kenya</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="../dropdown.css"
+    />
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <link rel="shortcut icon" type="image/x-icon" href="../images/logo/favicon.png">
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="../images/logo/favicon.png"
+    />
     <script
       src="https://kit.fontawesome.com/836a943e18.js"
       crossorigin="anonymous"
@@ -64,8 +80,8 @@
           <div class="nav-container">
             <div class="brand-logo">
               <a href="../index.html">
-              <img src="../images/logo/logo.png" alt="PetsParadise" />
-            </a>
+                <img src="../images/logo/logo.png" alt="PetsParadise" />
+              </a>
             </div>
             <div class="menu-icon">
               <i class="fas fa-bars"></i>
@@ -76,12 +92,22 @@
               <a class="active" href="./index.html">About Us</a>
               <a href="../gallery/index.html">Gallery</a>
               <a href="../contact/index.html">Contact Us</a>
-              <a
-                class="navcta"
-                target="_blank"
-                href="https://www.kennelbooker.com/clientlogin.aspx?id=5baa295a-003c-4f8c-ad69-ea9f09f3ea3c"
-                ><span>Book A Service</span></a
-              >
+              <div class="dropdown">
+                <a class="navcta">Book A Service</a>
+                <div class="dropdown-content">
+                  <a
+                    onclick="showRelocationToastr()"
+                    href="images/relocation.docx"
+                    download="RELOCATION AGREEMENT.docx"
+                    >Relocation Service</a
+                  >
+                  <a
+                    target="_blank"
+                    href="https://www.kennelbooker.com/clientlogin.aspx?id=5baa295a-003c-4f8c-ad69-ea9f09f3ea3c"
+                    >Other Services</a
+                  >
+                </div>
+              </div>
             </div>
           </div>
         </nav>
@@ -98,11 +124,12 @@
         <div class="story">
           <h3>our story</h3>
           <p>
-            Pets Paradise is a pet grooming, per daycare, pet boarding and pet relocation company based on
-            Elijah Wambugu Close. We are a band of pet lovers dedicated to
-            providing your pet with a safe, fun and caring environment in your
-            absence. We believe in a personalized approach to pet care ensuring
-            your peace-of-mind knowing your pet is safe, happy and loved.
+            Pets Paradise is a pet grooming, per daycare, pet boarding and pet
+            relocation company based on Elijah Wambugu Close. We are a band of
+            pet lovers dedicated to providing your pet with a safe, fun and
+            caring environment in your absence. We believe in a personalized
+            approach to pet care ensuring your peace-of-mind knowing your pet is
+            safe, happy and loved.
           </p>
         </div>
         <div class="passion">
@@ -182,9 +209,10 @@
             <span class="two">paradise</span>
           </h2>
           <p>
-            Pets Paradise is a pet grooming, pet daycare, pet boarding and pet relocation company based on
-            Elijah Wambugu Close. We are a pair of experienced hands that is
-            reliable and we have guaranteed quality services.
+            Pets Paradise is a pet grooming, pet daycare, pet boarding and pet
+            relocation company based on Elijah Wambugu Close. We are a pair of
+            experienced hands that is reliable and we have guaranteed quality
+            services.
           </p>
         </div>
         <div class="useful-links">
@@ -205,5 +233,16 @@
     <div class="copyright">
       <p>© 2021 PETSPARADISE. ALL RIGHTS RESERVED</p>
     </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"
+      defer
+    ></script>
+    <script src="../show-toastrs.js"></script>
   </body>
 </html>

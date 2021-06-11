@@ -5,8 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>contact | Pets Paradise Kenya</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="../dropdown.css"
+    />
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <link rel="shortcut icon" type="image/x-icon" href="../images/logo/favicon.png">
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="../images/logo/favicon.png"
+    />
     <script
       src="https://kit.fontawesome.com/836a943e18.js"
       crossorigin="anonymous"
@@ -65,7 +81,8 @@
             <div class="brand-logo">
               <a href="../index.html">
                 <img src="../images/logo/logo.png" alt="PetsParadise" />
-              </a>            </div>
+              </a>
+            </div>
             <div class="menu-icon">
               <i class="fas fa-bars"></i>
             </div>
@@ -75,9 +92,22 @@
               <a href="../about/index.html">About Us</a>
               <a href="../gallery/index.html">Gallery</a>
               <a class="active" href="./index.html">Contact Us</a>
-              <a class="navcta" target="_blank" href="https://www.kennelbooker.com/clientlogin.aspx?id=5baa295a-003c-4f8c-ad69-ea9f09f3ea3c"
-                ><span>Book A Service</span></a
-              >
+              <div class="dropdown">
+                <a class="navcta">Book A Service</a>
+                <div class="dropdown-content">
+                  <a
+                    onclick="showRelocationToastr()"
+                    href="images/relocation.docx"
+                    download="RELOCATION AGREEMENT.docx"
+                    >Relocation Service</a
+                  >
+                  <a
+                    target="_blank"
+                    href="https://www.kennelbooker.com/clientlogin.aspx?id=5baa295a-003c-4f8c-ad69-ea9f09f3ea3c"
+                    >Other Services</a
+                  >
+                </div>
+              </div>
             </div>
           </div>
         </nav>
@@ -110,13 +140,44 @@
           </div>
         </div>
         <div class="contact-form">
-          <form action="https://formsubmit.co/mypet@petsparadise.co.ke" method="POST" autocomplete="off">
-            <input type="hidden" name="_captcha" value= "false">
-            <input type="hidden" name="_subject" value= "PetsParadise - New Message">
-            <input required type="text" name="name" id="name" placeholder="Name">
-            <input required type="email" name="email" id="email" placeholder="Email Address">
-            <input type="number" name="phone" id="phone" placeholder="Phone Number">
-            <input required type="text" name="message" id="message" placeholder="Message" >
+          <form
+            action="https://formsubmit.co/mypet@petsparadise.co.ke"
+            method="POST"
+            autocomplete="off"
+          >
+            <input type="hidden" name="_captcha" value="false" />
+            <input
+              type="hidden"
+              name="_subject"
+              value="PetsParadise - New Message"
+            />
+            <input
+              required
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Name"
+            />
+            <input
+              required
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email Address"
+            />
+            <input
+              type="number"
+              name="phone"
+              id="phone"
+              placeholder="Phone Number"
+            />
+            <input
+              required
+              type="text"
+              name="message"
+              id="message"
+              placeholder="Message"
+            />
             <button class="contact-cta">Submit Message</button>
           </form>
         </div>
@@ -130,9 +191,10 @@
             <span class="two">paradise</span>
           </h2>
           <p>
-            Pets Paradise is a pet grooming, pet daycare, pet boarding and pet relocation company based on
-            Elijah Wambugu Close. We are a pair of experienced hands that is
-            reliable and we have guaranteed quality services.
+            Pets Paradise is a pet grooming, pet daycare, pet boarding and pet
+            relocation company based on Elijah Wambugu Close. We are a pair of
+            experienced hands that is reliable and we have guaranteed quality
+            services.
           </p>
         </div>
         <div class="useful-links">
@@ -153,5 +215,16 @@
     <div class="copyright">
       <p>© 2021 PETSPARADISE. ALL RIGHTS RESERVED</p>
     </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"
+      defer
+    ></script>
+    <script src="../show-toastrs.js"></script>
   </body>
 </html>

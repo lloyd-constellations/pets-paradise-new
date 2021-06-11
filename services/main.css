@@ -18,7 +18,7 @@
 body {
   font-family: "Open Sans", sans-serif;
 }
-a{
+a {
   text-decoration: none;
 }
 h1,
@@ -88,7 +88,7 @@ h6,
   width: 100vw;
   border-bottom: 0.12rem solid #ccc;
 }
-.menu-icon{
+.menu-icon {
   display: none;
 }
 .nav-container {
@@ -120,6 +120,7 @@ h6,
 .nav-items a.active {
   color: var(--yellow);
 }
+
 a.navcta {
   background: var(--maroon);
   outline: none;
@@ -132,6 +133,7 @@ a.navcta {
   display: flex;
   align-items: center;
   justify-content: center;
+  color: white;
 }
 a.navcta:hover {
   color: white;
@@ -148,6 +150,7 @@ a.navcta::before {
   position: absolute;
   z-index: -1;
 }
+
 /* About Hero section */
 .about-hero-section {
   overflow: hidden;
@@ -393,12 +396,12 @@ a.navcta::before {
     font-size: 40px;
   }
   /* services */
-  .services{
+  .services {
     width: 90vw;
     margin: auto;
     text-align: center;
   }
-  .service{
+  .service {
     flex-direction: column;
     margin-bottom: 2rem;
   }
@@ -408,10 +411,10 @@ a.navcta::before {
   .service.relocation {
     flex-direction: column;
   }
-  .service img{
+  .service img {
     width: 100%;
   }
-  .service-details{
+  .service-details {
     padding: 1rem;
     text-align: start;
   }
